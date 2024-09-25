@@ -1,53 +1,74 @@
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #CDC5B4; /* Soft beige background */
-  color: #22162B; /* Dark text for readability */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat for the body */
+  background-color: #F1FFFA; /* Soft light background */
+  color: #454545; /* Dark text for readability */
   margin: 0;
   padding: 0;
+  line-height: 1.6; /* Improve readability */
 }
 
 h1 {
   text-align: center;
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 4rem;
-  color: #5F0F40; /* Deep pink for the header */
-  margin-top: 2rem;
+  font-family: 'Montserrat', sans-serif; /* Montserrat for headings */
+  font-weight: 700; /* Bold weight for emphasis */
+  font-size: 4rem; /* Larger size for header */
+  color: #785964; /* Warm brown for the header */
+  margin: 3rem 0 1rem 0; /* Margin adjustments */
+  transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+h1:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.5rem;
-  color: #B59DA4; /* Soft mauve for subheadings */
+  font-family: 'Montserrat', sans-serif; /* Montserrat for subheadings */
+  font-weight: 600; /* Semi-bold weight for subheadings */
+  font-size: 2.5rem; /* Subheading size */
+  color: #785964; /* Warm brown for subheadings */
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0 1rem 0; /* Adjust margins */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+h2:hover {
+  color: #D5C7BC; /* Change to soft beige on hover */
 }
 
 .about, .skills, .projects, .contact {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: #ffffff; /* White container background for contrast */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-  border-radius: 10px;
+  max-width: 800px; /* Limit the maximum width for better layout */
+  margin: 2rem auto; /* Centering sections */
+  padding: 2rem; /* Added padding for a spacious feel */
+  background-color: #D5C7BC; /* Soft beige container background for contrast */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
+  border-radius: 15px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+.about:hover, .skills:hover, .projects:hover, .contact:hover {
+  transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
 .about p, .skills ul, .projects p, .contact p {
-  font-weight: 300;
-  color: #22162B; /* Dark text for body */
+  font-weight: 400; /* Regular weight for paragraph text */
+  color: #454545; /* Dark text for body */
   text-align: center;
 }
 
 .skills ul {
-  list-style: none;
+  list-style: none; /* Remove list styling */
   padding: 0;
   text-align: center;
 }
 
 .skills ul li {
   margin: 0.5rem 0;
-  font-weight: 500;
+  font-weight: 500; /* Medium weight for skill items */
+  transition: transform 0.2s ease; /* Smooth scale effect */
+}
+
+.skills ul li:hover {
+  transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .project {
@@ -57,26 +78,36 @@ h2 {
 
 .project img {
   max-width: 100%;
-  border: 4px solid #B59DA4; /* Soft mauve border for images */
+  border: 4px solid #785964; /* Warm brown border for images */
   border-radius: 10px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease; /* Smooth scale effect */
 }
 
 .project img:hover {
-  transform: scale(1.05); /* Subtle hover effect */
+  transform: scale(1.1); /* Enlarge image on hover */
 }
 
 .project h3 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  color: #85756E; /* Muted brown for project titles */
+  font-family: 'Montserrat', sans-serif; /* Montserrat for project titles */
+  font-weight: 700; /* Bold weight for project titles */
+  color: #785964; /* Warm brown for project titles */
   margin-top: 1rem;
 }
 
 .project p {
-  font-weight: 300;
-  color: #22162B; /* Dark text for project descriptions */
+  font-weight: 400; /* Regular weight for project descriptions */
+  color: #454545; /* Dark text for project descriptions */
   margin-top: 0.5rem;
+}
+
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-family: 'Montserrat', sans-serif; /* Montserrat for contact heading */
+  font-weight: 600; /* Semi-bold weight for heading */
+  color: #785964; /* Warm brown for contact heading */
 }
 
 a {
@@ -85,10 +116,27 @@ a {
 }
 
 .contact a {
-  color: #5F0F40; /* Deep pink for links */
+  color: #785964; /* Warm brown for links */
   font-weight: 500;
+  transition: color 0.3s ease; /* Smooth color change on hover */
 }
 
 .contact a:hover {
-  text-decoration: underline;
+  color: #D5C7BC; /* Change to soft beige on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  h1 {
+      font-size: 3.5rem; /* Responsive header size */
+  }
+
+  h2 {
+      font-size: 2rem; /* Responsive subheading size */
+  }
+
+  .about, .skills, .projects, .contact {
+      padding: 1.5rem; /* Less padding on smaller screens */
+  }
 }
