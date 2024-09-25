@@ -133,10 +133,10 @@ a {
   }
 
   h2 {
-      font-size: 2rem; /* Responsive subheading size */
+      font-size: 2rem; 
   }
 
   .about, .skills, .projects, .contact {
-      padding: 1.5rem; /* Less padding on smaller screens */
+      padding: 1.5rem; 
   }
 }
