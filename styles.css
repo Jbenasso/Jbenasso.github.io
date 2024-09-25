@@ -13,9 +13,7 @@ h1,h2{
 .skills{
 
 }
-.project{
 
-}
 .contact{
 
 }
@@ -30,3 +28,12 @@ body {
     font-weight: <weight>;
     font-style: normal;
   }
+
+.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+.project {
+    width: 30%;
+    margin: 10px;
+    padding: 20px 10px;
+    background: white; /* pick a color */
+    border-radius: 25%;
+}
