@@ -37,11 +37,11 @@ h2:hover {
 
 .about, .skills, .projects, .contact {
   max-width: 800px; /* Limit the maximum width for better layout */
-  margin: 2rem auto; /* Centering sections */
+  
   
   background-color: #D5C7BC; /* Soft beige container background for contrast */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
-  border-radius: 15px; /* Rounded corners */
+  border-radius: 9px; /* Rounded corners */
   transition: transform 0.3s ease; /* Smooth scale effect */
 }
 
