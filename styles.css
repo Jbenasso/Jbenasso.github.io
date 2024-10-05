@@ -93,3 +93,21 @@ ul {
   padding: 1rem;
   margin: 1rem 0;
 }
+.project {
+  background-color: #D9C8C1; /* New soft color for highlighted projects */
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  flex: 0 1 calc(30% - 1rem); /* Adjust for 3 items in a row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center content within the project box */
+}
+
+.project img {
+  width: 100%; /* Ensure image fills the container's width */
+  height: 150px; /* Set a fixed height for all images */
+  object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
+  border-radius: 10px;
+  margin: 1rem 0; /* Space above and below images */
+}
+
