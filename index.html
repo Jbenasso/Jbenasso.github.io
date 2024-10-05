@@ -1,74 +1,82 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSCE 190: Josefa Benasso</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Josefa Benasso</h1>
-    <h2>About me</h2>
+    <h1 class="poppins-700">Josefa Benasso</h1> 
 
     <div class="container">
-        <div class="skills">
-            <h2>Skills</h2>
-            <p>Some of my key skills include...</p>
+        <div class="about">
+            <h2 class="poppins-700">About Me</h2>
+            <p>Your about me content goes here.</p>
         </div>
 
-        <div class="projects">
-            <h2>Highlighted Projects</h2>
-
-            <!--Problem Statement Assignment-->
-            <section class="project">
-                <a href="files/statement.pdf">
-                    <h3>Problem Statement</h3>
-                </a>
-                <img src="images/statement.png" alt="Problem Statement Image">
-                <p>University dining halls need a data-driven solution to accurately predict meal demand and reduce food waste...</p>
-            </section>
-
-            <!--Affinity Diagram Assignment-->
-            <section class="project">
-                <a href="files/affinity.pdf">
-                    <h3>Affinity Diagram</h3>
-                </a>
-                <img src="images/affinity.png" alt="Affinity Diagram Image">
-                <p>Affinity diagram with 5 categories and 20 ideas about food waste management.</p>
-            </section>
-
-            <!--Personas-->
-            <section class="project">
-                <a href="files/Personas.pdf">
-                    <h3>Customer Personas</h3>
-                </a>
-                <img src="images/Persona1.png" alt="Customer Personas Image">
-                <p>Customer personas represent key user types, helping to tailor your app to their specific needs...</p>
-            </section>
-
-            <!--Sketches Assignment-->
-            <section class="project">
-                <a href="files/Sketches_DOC.pdf">
-                    <h3>Sketches</h3>
-                </a>
-                <img src="images/sketch1.png" alt="Sketches Image">
-                <p>These UI/UX sketches outline an app that tracks eating habits...</p>
-            </section>
-
-            <!--Paper Prototype Assignment-->
-            <section class="project">
-                <a href="https://youtu.be/dQw4w9WgXcQ">
-                    <h3>Prototype</h3>
-                </a>
-                <img src="images/Proto.png" alt="Prototype Image">
-                <p>Brief description of your prototype...</p>
-            </section>
+        <div class="skills">
+            <h2 class="poppins-700">Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Graphic Design</li>
+            </ul>
         </div>
 
         <div class="contact">
-            <h2>Contact Me</h2>
-            <p>Email: <a href="mailto:benassoj@email.sc.edu">benassoj@email.sc.edu</a></p>
+            <h2 class="poppins-700">Contact Me</h2>
+            <p>Your contact information goes here.</p>
         </div>
+    </div>
+
+    <div class="projects">
+        <h2 class="poppins-700">Highlighted Projects</h2> 
+        
+        <!--Project Sections-->
+        <section class="project">
+            <a href="files/statement.pdf">
+                <h3 class="poppins-700">Problem Statement</h3> 
+            </a>
+            <a href="files/statement.pdf"><img src="images/statement.png" alt="Problem Statement Image"></a>
+            <p class="poppins-400">University dining halls need a data-driven solution to accurately predict meal demand and reduce food waste.</p>
+        </section>
+
+        <section class="project">
+            <a href="files/affinity.pdf">
+                <h3 class="poppins-700">Affinity Diagram</h3>
+            </a>
+            <a href="files/affinity.pdf"><img src="images/affinity.png" alt="Affinity Diagram Image"></a>
+            <p class="poppins-400">Affinity diagram with 5 categories and 20 ideas about food waste management.</p>
+        </section>
+        
+        <section class="project">
+            <a href="Personas.pdf">
+                <h3 class="poppins-700">Customer Personas</h3>
+            </a>
+            <a href="files/Personas.pdf"><img src="images/Persona1.png" alt="Persona Image"></a>
+            <p class="poppins-400">Customer personas represent key user types, helping to tailor your app to their specific needs.</p>
+        </section>
+        
+        <section class="project">
+            <a href="files/Sketches_DOC.pdf">
+                <h3 class="poppins-700">Sketches</h3>
+            </a>
+            <a href="files/sketches.pdf"><img src="images/sketch1.png" alt="Sketch Image"></a>
+            <p class="poppins-400">These UI/UX sketches outline an app that tracks eating habits and reduces food waste.</p>
+        </section>
+
+        <section class="project">
+            <a href="https://youtu.be/dQw4w9WgXcQ">
+                <h3 class="poppins-700">Prototype</h3>
+            </a>
+            <a href="https://youtu.be/dQw4w9WgXcQ"><img src="images/Proto.png" alt="Prototype Image"></a>
+            <p class="poppins-400">Brief description of your prototype.</p>
+        </section>
     </div>
 </body>
 </html>
