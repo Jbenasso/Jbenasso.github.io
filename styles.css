@@ -105,7 +105,8 @@ ul {
 
 .project img {
   width: 100%; /* Ensure image fills the container's width */
-  height: 150px; /* Set a fixed height for all images */
+  height: 300px; /* Set a fixed height for all images */
+  width: 300px;
   object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
   border-radius: 10px;
   margin: 1rem 0; /* Space above and below images */
