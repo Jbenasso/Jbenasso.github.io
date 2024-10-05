@@ -110,4 +110,17 @@ ul {
   border-radius: 10px;
   margin: 1rem 0; /* Space above and below images */
 }
+h1 {
+  color: #594F3B; /* Dark brown for header */
+  font-size: 4rem; /* Keep the original font size */
+  text-align: center;
+  margin: 2.5 rem 0; /* Reduced margin to decrease space around the header */
+  font-weight: 100; /* Extra thin font weight */
+}
+.projects h2 {
+  text-align: center; /* Center the heading */
+  margin: 2rem 0; /* Add space above and below */
+  font-weight: 300; /* Thin font weight for projects heading */
+}
+
 
