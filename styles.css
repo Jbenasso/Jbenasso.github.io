@@ -1,76 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: 'Poppins', sans-serif; /* Use Poppins for the body */
-  background-color: #F5F5F5; /* Light background */
-  color: #333; /* Dark text for readability */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
   margin: 0;
   padding: 0;
-  line-height: 1.6; /* Improve readability */
+}
+
+header {
+  position: relative;
+  height: 100vh; /* Full height */
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.3); /* White overlay for text contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
 }
 
 h1 {
+  color: #594F3B; /* Dark brown for header */
+  font-size: 4rem;
   text-align: center;
-  font-weight: 700; /* Bold weight for emphasis */
-  font-size: 4rem; /* Larger size for header */
-  color: #3A5E9E; /* Dark blue for the header */
-  margin: 3rem 0 1rem 0; /* Margin adjustments */
+  margin: 0;
+  font-weight: 100; /* Extra thin font weight */
 }
 
 .container {
-  display: flex; /* Create a flexible box layout */
-  justify-content: space-around; /* Space items evenly */
-  margin: 2rem 0; /* Space above and below */
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .about, .skills, .contact {
-  flex: 1; /* Flex items to grow */
-  margin: 0 1rem; /* Space between items */
-  background-color: #D9E4E8; /* Soft light blue for sections */
-  padding: 1.5rem; /* Padding for better layout */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  background-color: #F5E6E3; /* Soft pink for sections */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  flex: 1; /* Allow equal width */
+  margin: 0 1rem; /* Space between sections */
 }
 
-.projects {
-  max-width: 1200px; /* Limit the maximum width for better layout */
-  margin: 2rem auto; /* Center the projects section */
-  padding: 2rem; /* Padding for better layout */
-  background-color: #C9E4F9; /* Light blue background for projects */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+h2 {
+  color: #594F3B; /* Dark brown for headings */
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 300; /* Thin font weight for headings */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.projects-container {
+  padding: 2rem 1rem;
+}
+
+.projects-heading {
+  text-align: center; /* Center the heading */
+  margin: 2rem 0; /* Add space above and below */
+  font-weight: 300; /* Thin font weight for projects heading */
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Space between projects */
 }
 
 .project {
-  display: inline-block; /* Allow project sections to be inline */
-  width: 30%; /* Each project takes up 30% of the width */
-  margin: 1.5%; /* Margin around project sections */
-  text-align: center; /* Center align text */
+  background-color: #D9C8C1; /* New soft color for highlighted projects */
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 1rem 0;
+  flex: 0 1 calc(30% - 1rem); /* Adjust for 3 items in a row */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project img {
-  max-width: 100%;
-  border: 4px solid #3A5E9E; /* Dark blue border for images */
+  width: 100%; /* Ensures image fills the container */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Crop the image to fit */
   border-radius: 10px;
+  margin: 1rem 0; /* Space above and below images */
 }
 
 .project h3 {
-  font-weight: 700; /* Bold weight for project titles */
-  color: #3A5E9E; /* Dark blue for project titles */
-  margin-top: 1rem;
+  color: #594F3B; /* Dark brown for project titles */
+  text-align: center;
+  margin: 0.5rem 0;
+  font-weight: 300; /* Thin font weight for project titles */
 }
 
 .project p {
-  font-weight: 400; /* Regular weight for project descriptions */
-  color: #333; /* Dark text for project descriptions */
-  margin-top: 0.5rem;
+  text-align: center;
+  color: #333; /* Darker text for project descriptions */
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #594F3B; /* Dark brown footer */
+  color: #FFFFFF;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .container {
-      flex-direction: column; /* Stack items on smaller screens */
+      flex-direction: column; /* Stack sections vertically on smaller screens */
+      align-items: center;
   }
 
   .project {
-      width: 100%; /* Full width for projects on small screens */
+      flex: 0 1 calc(45% - 1rem); /* 2 items per row on smaller screens */
   }
 }
