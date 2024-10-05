@@ -1,74 +1,73 @@
 body {
-  font-family: 'Montserrat', sans-serif; /* Use Montserrat for the body */
-  background-color: #F1FFFA; /* Soft light background */
-  color: #454545; /* Dark text for readability */
+  font-family: 'Montserrat', sans-serif;
+  background-color: #D3F3EE; /* Light mint background */
+  color: #594F3B; /* Dark earthy brown text */
   margin: 0;
   padding: 0;
-  line-height: 1.6; /* Improve readability */
+  line-height: 1.6;
 }
 
 h1 {
   text-align: center;
-  font-family: 'Montserrat', sans-serif; /* Montserrat for headings */
-  font-weight: 700; /* Bold weight for emphasis */
-  font-size: 4rem; /* Larger size for header */
-  color: #785964; /* Warm brown for the header */
-  margin: 3rem 0 1rem 0; /* Margin adjustments */
-  transition: transform 0.3s ease; /* Smooth scale effect */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+  color: #776258; /* Muted brownish-gray for the header */
+  margin: 3rem 0 1rem 0;
+  transition: transform 0.3s ease;
 }
 
 h1:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif; /* Montserrat for subheadings */
-  font-weight: 600; /* Semi-bold weight for subheadings */
-  font-size: 2.5rem; /* Subheading size */
-  color: #785964; /* Warm brown for subheadings */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  color: #776258;
   text-align: center;
-  margin: 2rem 0 1rem 0; /* Adjust margins */
-  transition: color 0.3s ease; /* Smooth color change on hover */
+  margin: 2rem 0 1rem 0;
+  transition: color 0.3s ease;
 }
 
 h2:hover {
-  color: #D5C7BC; /* Change to soft beige on hover */
+  color: #C49799; /* Warm rose on hover */
 }
 
 .about, .skills, .projects, .contact {
-  max-width: 800px; /* Limit the maximum width for better layout */
-  
-  
-  background-color: #D5C7BC; /* Soft beige container background for contrast */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
-  border-radius: 9px; /* Rounded corners */
-  transition: transform 0.3s ease; /* Smooth scale effect */
+  max-width: 800px;
+  background-color: #C49799; /* Warm rose background */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 9px;
+  margin: 2rem auto;
+  transition: transform 0.3s ease;
 }
 
 .about:hover, .skills:hover, .projects:hover, .contact:hover {
-  transform: scale(1.02); /* Slightly enlarge on hover */
+  transform: scale(1.02);
 }
 
 .about p, .skills ul, .projects p, .contact p {
-  font-weight: 400; /* Regular weight for paragraph text */
-  color: #454545; /* Dark text for body */
+  font-weight: 400;
+  color: #594F3B;
   text-align: center;
 }
 
 .skills ul {
-  list-style: none; /* Remove list styling */
+  list-style: none;
   padding: 0;
   text-align: center;
 }
 
 .skills ul li {
   margin: 0.5rem 0;
-  font-weight: 500; /* Medium weight for skill items */
-  transition: transform 0.2s ease; /* Smooth scale effect */
+  font-weight: 500;
+  transition: transform 0.2s ease;
 }
 
 .skills ul li:hover {
-  transform: scale(1.05); /* Slightly enlarge on hover */
+  transform: scale(1.05);
 }
 
 .project {
@@ -78,25 +77,25 @@ h2:hover {
 
 .project img {
   max-width: 100%;
-  border: 4px solid #785964; /* Warm brown border for images */
+  border: 4px solid #594F3B; /* Dark earthy brown for image border */
   border-radius: 10px;
-  transition: transform 0.3s ease; /* Smooth scale effect */
+  transition: transform 0.3s ease;
 }
 
 .project img:hover {
-  transform: scale(1.1); /* Enlarge image on hover */
+  transform: scale(1.1);
 }
 
 .project h3 {
-  font-family: 'Montserrat', sans-serif; /* Montserrat for project titles */
-  font-weight: 700; /* Bold weight for project titles */
-  color: #785964; /* Warm brown for project titles */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #594F3B;
   margin-top: 1rem;
 }
 
 .project p {
-  font-weight: 400; /* Regular weight for project descriptions */
-  color: #454545; /* Dark text for project descriptions */
+  font-weight: 400;
+  color: #594F3B;
   margin-top: 0.5rem;
 }
 
@@ -105,47 +104,59 @@ h2:hover {
 }
 
 .contact h2 {
-  font-family: 'Montserrat', sans-serif; /* Montserrat for contact heading */
-  font-weight: 600; /* Semi-bold weight for heading */
-  color: #785964; /* Warm brown for contact heading */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  color: #594F3B;
 }
 
 a {
   text-decoration: none;
-  color: inherit; /* Keep links same color as text */
+  color: inherit;
 }
 
 .contact a {
-  color: #785964; /* Warm brown for links */
+  color: #776258;
   font-weight: 500;
-  transition: color 0.3s ease; /* Smooth color change on hover */
+  transition: color 0.3s ease;
 }
 
 .contact a:hover {
-  color: #D5C7BC; /* Change to soft beige on hover */
-  text-decoration: underline; /* Underline on hover */
+  color: #C49799;
+  text-decoration: underline;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   h1 {
-      font-size: 3.5rem; /* Responsive header size */
+      font-size: 3.5rem;
   }
 
   h2 {
-      font-size: 2rem; 
+      font-size: 2rem;
   }
 
   .about, .skills, .projects, .contact {
-      padding: 1.5rem; 
+      padding: 1.5rem;
   }
 }
 
-.project img{
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.container .about,
+.container .skills,
+.container .projects,
+.container .contact {
+  grid-column: span 1;
+  background-color: #7FB7BE; /* Soft teal background for sections */
+}
+
+.project img {
   width: 300px;
   height: 300px;
-  margin: 10px;
-  border: 2px solid rgb(126, 14, 201); /* choose a color */
-  display: block;
-  margin: auto;
-  }
+  border: 2px solid #7FB7BE; /* Soft teal for image borders */
+}
