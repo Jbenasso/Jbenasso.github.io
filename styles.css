@@ -42,7 +42,7 @@ header {
 
 h1 {
   color: #594F3B; /* Dark brown for header */
-  font-size: 4rem;
+  font-size: 3rem; /* Smaller title size */
   text-align: center;
   margin: 1rem 0; /* Reduced margin to decrease space around the header */
   font-weight: 100; /* Extra thin font weight */
@@ -56,7 +56,7 @@ h1 {
   margin: auto;
 }
 
-.about, .skills, .contact {
+.about {
   background-color: #F5E6E3; /* Soft pink for sections */
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,8 +66,28 @@ h1 {
   transition: transform 0.3s ease-in-out; /* Smooth scaling effect */
 }
 
-.about:hover, .skills:hover, .contact:hover {
+.about:hover {
   transform: scale(1.05); /* Scale up by 5% on hover */
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem; /* Space between photo and text */
+  flex-wrap: wrap;
+}
+
+.about-photo {
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  object-fit: cover; /* Crop while maintaining aspect ratio */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.mission-statement {
+  flex: 1; /* Take up the remaining space */
 }
 
 h2 {
@@ -147,5 +167,13 @@ footer {
   .project {
     flex: 0 1 calc(45% - 1rem); /* 2 items per row on smaller screens */
   }
-}
 
+  .about-content {
+    flex-direction: column; /* Stack photo and text vertically */
+    align-items: center; /* Center align content */
+  }
+
+  .about-photo {
+    margin-bottom: 1rem; /* Add spacing below the photo */
+  }
+}
