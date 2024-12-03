@@ -1,109 +1,130 @@
+/* General Reset */
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F5E6E3;
 }
 
+/* Header */
 header {
   position: relative;
-  height: 100vh; /* Full height */
-  overflow: hidden;
-}
-
-#background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 1;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+  height: 15vh; /* Smaller header height */
+  background-color: #F5E6E3;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.3); /* White overlay for text contrast */
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 2;
+  height: 100%;
 }
 
-h1 {
-  color: #594F3B; /* Dark brown for header */
-  font-size: 3rem; /* Smaller title size */
-  text-align: center;
-  margin: 1rem 0; /* Reduced margin to decrease space around the header */
-  font-weight: 100; /* Extra thin font weight */
+.montserrat-thin {
+  font-weight: 100;
+  font-size: 2.5rem;
+  color: #594F3B;
+  margin: 0;
 }
 
+/* About Section */
 .container {
   display: flex;
-  flex-direction: column; /* Stack the sections */
-  padding: 2rem 1rem;
+  flex-direction: column;
+  align-items: center;
   max-width: 1200px;
   margin: auto;
+  padding: 2rem 1rem;
 }
 
 .about {
-  display: flex; /* Side-by-side layout */
-  background-color: #F5E6E3; /* Soft pink for sections */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5E6E3;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  margin-bottom: 2rem; /* Space below About Me */
-  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  width: 100%;
 }
 
-.about-images {
+.about-content {
   display: flex;
-  flex-direction: column;
-  gap: 1rem; /* Space between photo and resume */
+  align-items: center;
+  width: 100%;
 }
 
-.about-photo,
-.resume img {
-  width: 300px; /* Match other project images */
-  height: 300px; /* Match other project images */
+.about-photo {
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 2rem;
 }
 
 .mission-statement {
-  flex: 1; /* Allow text to take up remaining space */
-  padding-left: 2rem;
+  flex: 1;
 }
 
-.skills,
+.mission-statement p {
+  margin-bottom: 1rem;
+}
+
+/* Resume */
+.resume img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Skills Section */
+.skills {
+  background-color: #F5E6E3;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin: 2rem 0;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skills ul li {
+  margin: 0.5rem 0;
+}
+
+/* Contact Section */
 .contact {
   background-color: #F5E6E3;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 2rem;
-  margin: 1rem auto; /* Center the containers */
-  width: calc(50% - 2rem); /* Half the width with spacing */
-  text-align: center; /* Center align content */
+  margin: 2rem 0;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
 }
 
-.skills ul,
 .contact ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
+.contact ul li {
+  margin: 0.5rem 0;
+}
+
+/* Project Section */
 .projects {
   padding: 2rem 1rem;
 }
@@ -111,72 +132,50 @@ h1 {
 .project-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Space between projects */
+  gap: 1rem;
+  justify-content: space-between;
 }
 
 .project {
-  background-color: #D9C8C1; /* New soft color for highlighted projects */
+  background-color: #F5E6E3;
   border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  margin: 1rem 0;
-  flex: 0 1 calc(30% - 1rem); /* Adjust for 3 items in a row */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center content within the project box */
+  width: calc(33.333% - 1rem); /* Three projects per row */
+  text-align: center;
+}
+
+.project a {
+  color: #594F3B;
+  text-decoration: none;
 }
 
 .project img {
-  width: 300px; /* Set consistent image size */
-  height: 300px;
-  object-fit: cover; /* Crop the image to fit while maintaining aspect ratio */
-  border-radius: 10px;
-  margin: 1rem 0; /* Space above and below images */
-}
-
-.projects h2 {
-  text-align: center; /* Center the heading */
-  margin: 2rem 0; /* Add space above and below */
-  font-weight: 300; /* Thin font weight for projects heading */
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 1rem 0;
 }
 
 .project h3 {
-  color: #594F3B; /* Dark brown for project titles */
-  text-align: center;
-  margin: 0.5rem 0;
-  font-weight: 300; /* Thin font weight for project titles */
-  background: none; /* Remove highlight */
+  margin: 0;
 }
 
 .project p {
-  text-align: center;
-  color: #333; /* Darker text for project descriptions */
+  margin: 1rem 0 0;
 }
 
+/* Footer */
 footer {
+  background-color: #594F3B;
+  color: #F5E6E3;
   text-align: center;
-  padding: 2rem 0;
-  background-color: #594F3B; /* Dark brown footer */
-  color: #FFFFFF;
+  padding: 1rem;
+  position: relative;
+  width: 100%;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column; /* Stack sections vertically on smaller screens */
-    align-items: center;
-  }
-
-  .about {
-    flex-direction: column; /* Stack photo and text vertically */
-    align-items: center;
-  }
-
-  .about-photo,
-  .resume img {
-    margin-bottom: 1rem; /* Add spacing below the photo and resume */
-  }
-
-  .skills,
-  .contact {
-    width: 90%; /* Take up most of the width on smaller screens */
-  }
+footer p {
+  margin: 0;
+  font-size: 1rem;
 }
