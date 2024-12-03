@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #F5E6E3;
+  font-size: 0.9rem; /* Smaller default font size */
 }
 
 /* Header */
@@ -26,7 +27,7 @@ header {
 
 .montserrat-thin {
   font-weight: 100;
-  font-size: 2.5rem;
+  font-size: 1.8rem; /* Smaller header font size */
   color: #594F3B;
   margin: 0;
 }
@@ -60,8 +61,8 @@ header {
 }
 
 .about-photo {
-  width: 300px;
-  height: 300px;
+  width: 200px; /* Smaller image size */
+  height: 200px; /* Smaller image size */
   object-fit: cover;
   border-radius: 12px;
   margin-right: 2rem;
@@ -73,12 +74,13 @@ header {
 
 .mission-statement p {
   margin-bottom: 1rem;
+  font-size: 0.9rem; /* Smaller font size for text */
 }
 
 /* Resume */
 .resume img {
-  width: 300px;
-  height: 300px;
+  width: 200px; /* Consistent smaller image size */
+  height: 200px; /* Consistent smaller image size */
   object-fit: cover;
   border-radius: 12px;
 }
@@ -102,6 +104,7 @@ header {
 
 .skills ul li {
   margin: 0.5rem 0;
+  font-size: 0.8rem; /* Smaller font size for skills list */
 }
 
 /* Contact Section */
@@ -123,6 +126,7 @@ header {
 
 .contact ul li {
   margin: 0.5rem 0;
+  font-size: 0.8rem; /* Smaller font size for contact info */
 }
 
 /* Project Section */
@@ -153,7 +157,7 @@ header {
 
 .project img {
   width: 100%;
-  height: 300px; /* Fixed height for all project images */
+  height: 200px; /* Smaller height for images */
   object-fit: cover;
   border-radius: 12px;
   margin: 1rem 0;
@@ -161,10 +165,12 @@ header {
 
 .project h3 {
   margin: 0;
+  font-size: 1rem; /* Smaller font size for project titles */
 }
 
 .project p {
   margin: 1rem 0 0;
+  font-size: 0.8rem; /* Smaller font size for project description */
 }
 
 /* Footer */
@@ -179,9 +185,10 @@ footer {
 
 footer p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.8rem; /* Smaller font size for footer text */
 }
 
 h1{
   text-align: center;
+  font-size: 1.8rem; /* Smaller font size for main header */
 }
