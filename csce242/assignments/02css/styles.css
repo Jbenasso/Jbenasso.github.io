@@ -1,0 +1,83 @@
+/* Assignment 2 Custom Styles */
+
+body {
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+    background: url('../01html/otter1.png') center/cover no-repeat fixed;
+    margin: 0;
+    min-height: 100vh;
+    color: #22223b;
+}
+
+#main-content {
+    background: rgba(255,255,255,0.92);
+    max-width: 800px;
+    margin: 48px auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(34,34,59,0.10);
+    padding: 40px 48px;
+}
+
+h1 {
+    color: #3d5a80;
+    font-size: 2.5rem;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #ee6c4d;
+    font-size: 1.5rem;
+    margin-bottom: 18px;
+}
+
+p {
+    color: #22223b;
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+
+.image-row {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.img-formatted {
+    border: 3px solid #3d5a80;
+    border-radius: 12px;
+    padding: 8px;
+    background: #f8fafc;
+    max-width: 220px;
+    height: auto;
+    box-shadow: 0 2px 8px rgba(34,34,59,0.08);
+}
+
+#info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    background: #e0e7ff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#info-table th, #info-table td {
+    border: 1.5px solid #3d5a80;
+    padding: 12px 16px;
+    text-align: center;
+}
+
+#info-table th {
+    background: #3d5a80;
+    color: #fff;
+    font-weight: 600;
+}
+
+#info-table tr:nth-child(even) {
+    background: #f8fafc;
+}
+
+#info-table tr:nth-child(odd) {
+    background: #e0e7ff;
+}

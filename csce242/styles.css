@@ -1,0 +1,60 @@
+/* CSCE 242 Custom Styles */
+
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    background: linear-gradient(120deg, #f8fafc 0%, #e0e7ff 100%);
+    margin: 0;
+    min-height: 100vh;
+    color: #22223b;
+}
+
+#main-content {
+    background: rgba(255,255,255,0.95);
+    max-width: 700px;
+    margin: 40px auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(34,34,59,0.08);
+    padding: 32px 40px;
+}
+
+h1, h2 {
+    color: #4f518c;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.3rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+}
+
+p, ul {
+    color: #22223b;
+    font-size: 1.08rem;
+}
+
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Assignment links */
+.assignment-link {
+    text-decoration: none;
+    color: #3d5a80;
+    font-weight: 500;
+    transition: color 0.2s;
+    border-bottom: 2px solid transparent;
+    padding: 2px 0;
+}
+.assignment-link:hover {
+    color: #ee6c4d;
+    border-bottom: 2px solid #ee6c4d;
+}
