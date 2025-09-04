@@ -35,6 +35,20 @@ body {
 }
 */
 
+/*gallery*/
+#gallery{
+    flex-wrap:wrap;
+}
+
+#gallery img {
+    padding:5px;
+}
+
+#gallery section{
+    width: 25%;
+    text-align:center;
+}
+
 /*images*/
 img{
     max-width:100%;
