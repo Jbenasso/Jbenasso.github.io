@@ -1,37 +1,52 @@
-/* Import retro Google font */
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Playfair+Display:wght@400;700&display=swap');
-
+/* Global font (retro serif) */
 body {
   margin: 0;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'Special Elite', cursive;
   background: url("images/background.PNG") no-repeat center center fixed;
   background-size: cover;
-  color: #2b2b2b;
+  color: #2A4156; /* Navy */
   line-height: 1.6;
+}
+
+/* Content wrapper box */
+.content-box {
+  background: rgba(255, 255, 255, 0.85); /* translucent so bg shows */
+  margin: 1rem auto;
+  padding: 2rem;
+  max-width: 1200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 12px;
 }
 
 /* Header */
 header {
   text-align: center;
-  padding: 1.5rem;
-  background: rgba(253, 251, 245, 0.8); /* cream transparent */
-  border-bottom: 3px solid #7b6d8d;
+  padding: 3rem 1rem; /* more space for the background */
+  background: url("images/background-title.png") no-repeat center center;
+  background-size: cover; /* makes it fill the header */
+  color: #e5e1e1; /* white text looks good on an image */
+  border-bottom: 3px solid #557C8D; /* teal accent */
 }
+
 
 header h1 {
   margin: 0;
-  font-size: 2.5rem;
-  font-family: 'Special Elite', cursive;
-  color: #7b6d8d;
+  font-size: 3rem;
+  font-family: 'Special Elite', cursive; /* quirky retro */
 }
+
 header p {
   font-style: italic;
-  color: #9b4d4d;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
+
 
 /* Nav */
 nav {
-  background: rgba(123, 109, 141, 0.9);
+  background: #2A4156; /* Navy */
+  margin: 1rem 0;
+  border-radius: 8px;
 }
 nav ul {
   list-style: none;
@@ -41,27 +56,23 @@ nav ul {
 }
 nav li {
   flex: 1;
-  border-right: 1px solid #fdfbf5;
-}
-nav li:last-child {
-  border-right: none;
+  text-align: center;
 }
 nav a {
   display: block;
   padding: 1rem;
   text-decoration: none;
+  color: #fff;
   font-weight: bold;
-  color: #fdfbf5;
-  transition: background 0.3s;
 }
 nav a:hover {
-  background: #9b4d4d;
+  background: #557C8D; /* Teal */
 }
 
 /* First Flex Layout */
 .flex-layout {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 0;
   gap: 1rem;
 }
 .flex-layout aside {
@@ -77,34 +88,27 @@ nav a:hover {
 }
 .flex-layout article {
   flex: 1 1 250px;
-  background: rgba(253, 251, 245, 0.9);
+  background: #E5E1E0; /* Beige */
   padding: 1rem;
-  border-left: 4px solid #7b6d8d;
-  border-radius: 4px;
+  border-left: 4px solid #557C8D;
+  border-radius: 6px;
 }
 
 /* Second Layout */
 .second-layout {
   display: flex;
-  padding: 1rem;
+  padding: 1rem 0;
   gap: 1rem;
 }
 .links {
   flex: 1;
-  background: rgba(155, 77, 77, 0.9);
+  background: #557C8D; /* Teal */
   color: #fff;
   padding: 1rem;
   border-radius: 6px;
 }
-.links ul {
-  list-style: none;
-  padding: 0;
-}
-.links li {
-  margin: 0.5rem 0;
-}
 .links a {
-  color: #fdfbf5;
+  color: #fff;
   text-decoration: none;
 }
 .content-grid {
@@ -115,8 +119,8 @@ nav a:hover {
 }
 .content-grid article {
   flex: 1 1 200px;
-  background: rgba(123, 109, 141, 0.85);
-  color: #fdfbf5;
+  background: #C0D6E6; /* Sky Blue */
+  color: #2A4156; /* Navy text */
   padding: 1rem;
   border-radius: 6px;
 }
@@ -124,17 +128,16 @@ nav a:hover {
   display: block;
   margin: 0.5rem 0;
   max-width: 100%;
-  border: 2px solid #fdfbf5;
+  border: 2px solid #fff;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  background: rgba(155, 77, 77, 0.9);
-  color: #fdfbf5;
+  background: #2A4156; /* Navy */
+  color: #fff;
   padding: 1rem;
-  font-style: italic;
-  border-top: 3px solid #7b6d8d;
+  border-top: 3px solid #557C8D;
 }
 
 /* Responsive */
