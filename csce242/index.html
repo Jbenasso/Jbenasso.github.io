@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>CSCE 242 – Web Applications</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>CSCE 242 – Web Applications</h1>
+  <!-- Header -->
+  <header class="banner">
+    <h1>✧ CSCE 242 ✧</h1>
     <p class="author">Josefa Benasso B</p>
     <p class="description">
       Web technologies to support client-server computing.<br>
@@ -14,90 +17,105 @@
     </p>
   </header>
 
+  <!-- Arched navigation -->
+  <section class="nav-arches">
+    <div class="arch">
+      <a href="assignments/01html/index.html">
+        <img src="images/icon1.jpg" alt="Assignment 1 Icon">
+        <p>Assignment 1</p>
+      </a>
+    </div>
+    <div class="arch">
+      <a href="assignments/02css/index.html">
+        <img src="images/icon2.jpg" alt="Assignment 2 Icon">
+        <p>Assignment 2</p>
+      </a>
+    </div>
+    <div class="arch">
+      <a href="examples/flex/index.html">
+        <img src="images/icon3.jpg" alt="Assignment 3 Icon">
+        <p>Assignment 3</p>
+      </a>
+    </div>
+    <div class="arch">
+      <a href="assignments/Recreate-Page/index.html">
+        <img src="images/icon1.jpg" alt="Assignment 4 Icon">
+        <p>Assignment 4</p>
+      </a>
+    </div>
+  </section>
+
   <main>
     <!-- Assignments Section -->
     <h2>Assignments</h2>
-    <section class="assignments">
-      <!-- Assignment 1 -->
-      <div class="assignment">
+    <section class="cards assignments">
+      <div class="card">
         <a href="assignments/01html/index.html">
-          <img src="images/assignment1.png" alt="Assignment 1 Screenshot">
           <h3>Assignment 1 – Basic HTML</h3>
         </a>
-        <p>Created my first webpage using semantic HTML5 elements. Structured headings, lists, and links to practice fundamental page design.</p>
+        <p>Created my first webpage using semantic HTML5 elements.</p>
       </div>
 
-      <!-- Assignment 2 -->
-      <div class="assignment">
+      <div class="card">
         <a href="assignments/02css/index.html">
-          <img src="images/assignment2.png" alt="Assignment 2 Screenshot">
           <h3>Assignment 2 – Styling with CSS</h3>
         </a>
-        <p>Styled the HTML page using CSS. Learned about colors, borders, spacing, and how to make content visually appealing with consistent design.</p>
+        <p>Styled the HTML page with CSS for colors, borders, spacing.</p>
       </div>
 
-      <!-- Assignment 3 -->
-      <div class="assignment">
+      <div class="card">
         <a href="examples/flex/index.html">
-          <img src="images/assignment3.png" alt="Assignment 3 Screenshot">
           <h3>Assignment 3 – Flexbox Layout</h3>
         </a>
-        <p>Designed a responsive layout using Flexbox. Practiced aligning items, distributing space, and building a layout that adapts across devices.</p>
+        <p>Designed a responsive layout with Flexbox for modern layouts.</p>
       </div>
-    </section>
 
-    <!-- Assignment 4 -->
-      <div class="assignment">
+      <div class="card">
         <a href="assignments/Recreate-Page/index.html">
-          <img src="images/assignment4.png" alt="Assignment 4 Screenshot">
           <h3>Assignment 4 – Recreate Page</h3>
         </a>
-        <p>Recreated a webpage layout using HTML and CSS. Focused on structure, styling, and responsive design principles.</p>
+        <p>Recreated a webpage layout focusing on responsive design.</p>
+      </div>
+
+      <div class="card">
+        <a href="assignments/Javascript/index.html">
+          <h3>Assignment 5 – JavaScript Interactivity</h3>
+        </a>
+        <p>Added DOM manipulation & event handling for interactivity.</p>
       </div>
     </section>
 
-    <!-- Assignment 5 -->
-      <div class="assignment">
-        <a href="assignments/Javascript/index.html">
-          <img src="images/assignment5.png" alt="Assignment 5 Screenshot">
-          <h3>Assignment 5 – JavaScript Interactivity</h3>
-        </a>
-        <p>Implemented interactive features using JavaScript. Focused on DOM manipulation, event handling, and creating a dynamic user experience.</p>
-      </div>
-    </section>
+    <!-- Separator Ribbon -->
+    <div class="separator">
+      <img src="images/separator.jpg" alt="Section Divider">
+    </div>
 
     <!-- Projects Section -->
     <h2>Projects</h2>
-    <section class="projects">
-      <!-- Project Step 1: Topic -->
-      <div class="project">
+    <section class="cards projects">
+      <div class="card">
         <a href="projects/part1/MusicGenresWebsite.pdf">
-          <img src="projects/part1/MusicGenresWebsite.pdf" alt="Project Topic Screenshot">
           <h3>Project Step 1 – Topic</h3>
         </a>
-        <p>PDF outlining the topic and goals of my semester project.</p>
+        <p>PDF outlining my semester project topic and goals.</p>
       </div>
 
-      <!-- Project Step 2: Website -->
-      <div class="project">
+      <div class="card">
         <h3>Project Step 2 – Website</h3>
         <iframe src="projects/part2/index.html"
-                width="100%" height="600" style="border: none;">
-        </iframe>
-        <p>Website showcasing the music genres project with interactive elements.</p>
+                width="100%" height="250"></iframe>
+        <p>Website showcasing music genres project.</p>
       </div>
 
-
-      <!-- Placeholder for future steps -->
-      <div class="project">
-        <h3>More steps coming soon...</h3>
-        <p>This section will be updated as new project requirements are released.</p>
+      <div class="card">
+        <h3>More steps coming soon…</h3>
+        <p>This section will update as new requirements are released.</p>
       </div>
     </section>
   </main>
 
   <footer>
-
+    <p>✦ Made with calm vibes in nature ✦</p>
   </footer>
 </body>
 </html>
