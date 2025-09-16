@@ -17,6 +17,18 @@
     </p>
   </header>
 
+  <br>
+
+  <!-- Floating Nav Bar -->
+<nav class="top-nav">
+  <ul>
+    <li><a href="#assignments">Assignments</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#footer">Contact</a></li>
+  </ul>
+</nav>
+
+
   <!-- Arched navigation -->
   <section class="nav-arches">
     <div class="arch">
@@ -47,12 +59,13 @@
 
   <main>
     <!-- Assignments Section -->
-    <h2>Assignments</h2>
+    <h2 id="assignments">Assignments</h2>
     <section class="cards assignments">
       <div class="card">
         <a href="assignments/01html/index.html">
           <h3>Assignment 1 – Basic HTML</h3>
         </a>
+        <img src="images/otter.png" alt="#" class="project-img">
         <p>Created my first webpage using semantic HTML5 elements.</p>
       </div>
 
@@ -60,6 +73,7 @@
         <a href="assignments/02css/index.html">
           <h3>Assignment 2 – Styling with CSS</h3>
         </a>
+        <img src="images/wombat.png" alt="#" class="project-img">
         <p>Styled the HTML page with CSS for colors, borders, spacing.</p>
       </div>
 
@@ -67,21 +81,16 @@
         <a href="examples/flex/index.html">
           <h3>Assignment 3 – Flexbox Layout</h3>
         </a>
+        <img src="images/squirrel.png" alt="#" class="project-img">
         <p>Designed a responsive layout with Flexbox for modern layouts.</p>
       </div>
 
       <div class="card">
-        <a href="assignments/Recreate-Page/index.html">
-          <h3>Assignment 4 – Recreate Page</h3>
+        <a href="examples/04_js/js-intro.html">
+          <h3>Assignment 4 – Javascript</h3>
         </a>
-        <p>Recreated a webpage layout focusing on responsive design.</p>
-      </div>
-
-      <div class="card">
-        <a href="assignments/Javascript/index.html">
-          <h3>Assignment 5 – JavaScript Interactivity</h3>
-        </a>
-        <p>Added DOM manipulation & event handling for interactivity.</p>
+        <img src="assignments/Javascript/images/cloudy.png" alt="#" class="project-img">
+        <p>Added interactivity using JavaScript and DOM manipulation.</p>
       </div>
     </section>
 
@@ -91,12 +100,13 @@
     </div>
 
     <!-- Projects Section -->
-    <h2>Projects</h2>
+    <h2 id="projects">Projects</h2>
     <section class="cards projects">
       <div class="card">
         <a href="projects/part1/MusicGenresWebsite.pdf">
           <h3>Project Step 1 – Topic</h3>
         </a>
+        <img src="images/music.png" alt="Music Genres Project Topic" class="project-img">
         <p>PDF outlining my semester project topic and goals.</p>
       </div>
 
@@ -107,17 +117,31 @@
         <p>Website showcasing music genres project.</p>
       </div>
 
-      <div class="card">
-        <h3>More steps coming soon…</h3>
-        <p>This section will update as new requirements are released.</p>
-      </div>
+      <!-- Project 3 (moved from Assignment 4) -->
+    <div class="card">
+      <a href="assignments/Recreate-Page/index.html">
+        <h3>Project 3 – Recreate Page</h3>
+      </a>
+      <img src="images/recreate.png" alt="Recreate Page Project" class="project-img">
+      <p>Recreated a webpage layout focusing on responsive design.</p>
+    </div>
+
+    <!-- Project 4 (moved from Assignment 5) -->
+    <div class="card">
+      <a href="assignments/Javascript/index.html">
+        <h3>Project 4 – JavaScript Interactivity</h3>
+      </a>
+      <img src="images/javascript.png" alt="JavaScript Interactivity Project" class="project-img">
+      <p>Added DOM manipulation & event handling for interactivity.</p>
+    </div>
+
     </section>
   </main>
 
-  <footer>
+  <footer id="footer">
     <p>© 2024 Josefa Benasso B | CSCE 242 Web Applications</p>
     <p>
-      <a href="https://github.com/Jbenasso/csce242">GitHub Repository</a>
+      <a href="https://github.com/Jbenasso">GitHub Repository</a>
     </p>
   </footer>
 </body>

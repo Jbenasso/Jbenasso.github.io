@@ -38,3 +38,10 @@ document.getElementById("txt-emotion").onkeyup = (event) => {
     document.getElementById("p-emotion").innerHTML = `You are feeling: ${userInput.value}`;
     document.getElementById("img-emotion").classList.remove("hidden");
 }
+
+document.getElementById("txt-emotion").onkeydown = (event) => {
+    if(event.key === "Enter") {
+        event.preventDefault();  //prevents the default action of the event (submitting a form)
+        document.getElementById("btn-clear-emotion").click(); //simulates a click on the button
+    }
+}

@@ -177,3 +177,104 @@ a {
 a:hover {
   color: #2e6b4d; /* soft green accent on hover */
 }
+
+/* Floating Glass Nav */
+.top-nav {
+  position: sticky;
+  top: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px 25px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 40px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  z-index: 1000;
+}
+
+.top-nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.top-nav a {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #2f493c;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.top-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: #2e6b4d;
+  transition: width 0.3s ease;
+}
+
+.top-nav a:hover {
+  color: #2e6b4d;
+}
+
+.top-nav a:hover::after {
+  width: 100%;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Project images */
+.project-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.03);
+}
+
+/* Project cards consistent height */
+.projects .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;   /* keeps cards aligned */
+  max-height: 400px;   /* prevents huge growth */
+  overflow: hidden;
+}
+
+/* Project images */
+.project-img {
+  width: 100%;
+  height: 200px;      /* fixed height for consistency */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-img:hover {
+  transform: scale(1.03);
+}
+
+/* Iframe fix (same height as images) */
+.projects .card iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
