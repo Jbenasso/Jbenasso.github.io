@@ -278,3 +278,33 @@ html {
   border-radius: 10px;
   margin-bottom: 10px;
 }
+
+/* Slim top bar */
+.top-bar {
+  background: white;
+  display: flex; 
+  flex-direction: row;         /* make sure it's horizontal */
+  justify-content: space-between; /* left/right sides */
+  align-items: center;         /* vertical centering */
+  padding: 4px 16px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* reset default margins (important for h1/p!) */
+.top-bar h1, 
+.top-bar p {
+  margin: 0;
+  padding: 0;
+}
+
+/* make text smaller so bar stays slim */
+.site-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2f2f2f;
+}
+
+.site-tagline {
+  font-size: 0.9rem;
+  color: #666;
+}
