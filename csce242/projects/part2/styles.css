@@ -155,3 +155,28 @@ footer {
     flex-direction: column;
   }
 }
+
+/* Sidebar images */
+.flex-layout aside img {
+  width: 100%;        /* fill sidebar width */
+  height: auto;       /* keep aspect ratio */
+  border-radius: 6px;
+}
+
+/* Grid images */
+.content-grid img {
+  display: block;
+  width: 100%;        /* fill article width */
+  height: 200px;      /* consistent height */
+  object-fit: cover;  /* crop instead of stretch */
+  margin: 0.5rem 0;
+  border: 2px solid #fff;
+  border-radius: 4px;
+}
+/* Sidebar images */
+.flex-layout aside img {
+  max-width: 150px;   /* shrink width */
+  height: auto;       /* keep aspect ratio */
+  border-radius: 6px;
+  align-self: center; /* center them inside the column */
+}
