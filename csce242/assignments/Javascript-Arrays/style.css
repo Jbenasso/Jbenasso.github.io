@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f8f8f3;
+}
+
+h1 {
+  color: #3c6d80;
+}
+
+h2 {
+  color: #d46a6a;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.card {
+  position: relative;
+  border: 5px solid #f28b82;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 180px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;     /* Fixed height for consistency */
+  object-fit: cover; /* Crop while keeping proportions */
+  display: block;
+}
+
+.card .overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(242, 139, 130, 0.9);
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* Popup styles */
+.popup {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup.hidden {
+  display: none;
+}
+
+.popup-content {
+  background: #fff8f0;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  max-width: 400px;
+}
+
+.popup-content img {
+  max-width: 300px;   /* limit width */
+  max-height: 300px;  /* limit height */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#close {
+  float: right;
+  font-size: 18px;
+  cursor: pointer;
+  color: #d46a6a;
+}
+
+.credit {
+  margin-top: 30px;
+  font-size: 0.9em;
+}
