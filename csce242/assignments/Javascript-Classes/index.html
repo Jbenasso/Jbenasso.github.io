@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Assignment 11 — Classes (Paintings Gallery)</title>
+
+  <!-- W3CSS for modal + handy utilities -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+
+  <!-- Google Font :3 -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="w3-theme-l5">
+  <header class="page-header">
+    <h1>Assignment 11</h1>
+    <p class="subtitle">Classes</p>
+  </header>
+
+  <main class="container">
+    <!-- Cards are injected here by JS -->
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+  </main>
+
+  <footer class="credit">
+    <small>
+      All sourced from <a href="https://pixabay.com/" target="_blank" rel="noreferrer">Pixabay</a>
+    </small>
+    <small>© yourportalname.com</small>
+  </footer>
+
+  <!-- Single reusable modal -->
+  <div id="paintingModal" class="w3-modal" aria-hidden="true">
+    <div class="w3-modal-content w3-animate-top modal-card">
+      <header class="w3-container w3-theme-l3 modal-header">
+        <h3 id="modalTitle" class="w3-margin-0"></h3>
+        <button class="w3-button w3-xlarge w3-transparent modal-close" title="Close">&times;</button>
+      </header>
+
+      <div id="modalBody" class="w3-container modal-body"></div>
+
+      <footer class="w3-container w3-theme-l4 modal-footer">
+        <button class="w3-button w3-theme-dark modal-close">Close</button>
+      </footer>
+    </div>
+  </div>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
