@@ -1,0 +1,80 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* Header */
+header h1 {
+  color: #3a6b82;
+}
+header h2 {
+  color: #d66;
+}
+
+/* Menu */
+nav {
+  margin: 15px 0;
+}
+.menu-toggle {
+  cursor: pointer;
+  font-size: 20px;
+}
+#menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+#menu-items li {
+  margin: 0 10px;
+  cursor: pointer;
+  color: #0077cc;
+}
+#menu-items li::after {
+  content: "|";
+  margin-left: 10px;
+}
+#menu-items li:last-child::after {
+  content: "";
+}
+
+/* Hidden sections */
+.hidden {
+  display: none;
+}
+
+/* Plant section */
+#planting img {
+  width: 120px;
+  margin-top: 15px;
+}
+#days {
+  width: 60%;
+  margin: 15px auto;
+  display: block;
+}
+#days-output, #plant-message {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #3a6b82;
+}
+
+/* Clock */
+#digital-clock {
+  font-size: 28px;
+  font-weight: bold;
+  color: #444;
+}

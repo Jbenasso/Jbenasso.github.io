@@ -1,0 +1,48 @@
+/* Structure */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:url("images/background.png");
+    background-size:cover;
+
+}
+
+#content{
+    background:#F2D479;
+    width:70%;
+    margin:auto;  /*center*/
+    padding:1%; /*get text away from edge*/
+    border-radius:5px; /*rounded corners*/
+}
+
+/*Tables*/
+table{
+    border-collapse:collapse;
+}
+
+td, th{
+    border:1px solid #73462D;
+    padding:5px 10px; /*top and bottom 5, right and left 10*/
+}
+
+th{
+    background:#BF8756;
+    color:#F2DCB3;
+}
+
+/*images*/
+#giraffe-pic{
+    max-width:100%;
+    height:auto;
+    box-shadow:7px 7px #D9B26A;
+}
+
+/* Typography */
+h1{
+    color:#BF8756;
+}
+h2{
+    color:#D9B26A;
+}
+p{
+    color:#BF8756 
+}

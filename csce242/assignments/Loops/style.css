@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.container {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+h1 {
+  color: #4b6a74;
+}
+
+h2 {
+  color: #e57373;
+}
+
+#scene {
+  margin: 20px auto;
+  width: 90%;
+  height: 400px;
+  position: relative;
+  background-color: lightblue;
+}
+
+/* Tree */
+.tree {
+  position: absolute;
+  bottom: 40px;
+  width: 60px;
+  height: 100px;
+}
+.trunk {
+  width: 20px;
+  height: 40px;
+  background: saddlebrown;
+  margin: 0 auto;
+}
+.leaves {
+  width: 60px;
+  height: 60px;
+  background: green;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+/* Cloud */
+.cloud {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.cloud span {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  margin: -10px;
+}
+
+/* Sun and Moon */
+.sun, .moon {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.sun {
+  background: yellow;
+}
+.moon {
+  background: lightyellow;
+  overflow: hidden;
+}
+.moon::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: black;
+}
+
+/* Footer */
+footer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}

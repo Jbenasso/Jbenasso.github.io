@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 8 - If Statements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Menu Bar -->
+    <header>
+      <h1>Assignment 8</h1>
+      <h2>If Statements</h2>
+      <nav>
+        <div class="menu-toggle">
+          <span id="arrow">▼</span>
+        </div>
+        <ul id="menu-items" class="hidden">
+          <li data-section="planting">Exercise 1</li>
+          <li data-section="clock">Exercise 2</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Planting Section -->
+    <section id="planting" class="content">
+      <h3>Exercise 1: Planting</h3>
+      <label for="days">How many days has it been since watering your plant?</label>
+      <input type="range" id="days" min="1" max="12" value="1">
+      <p id="days-output">It's been 1 day since watering your plant</p>
+      <p id="plant-message"></p>
+      <img id="plant-image" src="images/plant_healthy.png" alt="Plant Status">
+    </section>
+
+    <!-- Digital Clock Section -->
+    <section id="clock" class="content hidden">
+      <h3>Exercise 2: Our Digital Clock</h3>
+      <p id="digital-clock"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
